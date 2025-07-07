@@ -5,8 +5,8 @@ from email.mime.text import MIMEText
 
 SMTP_SERVER = 'Your.smtp_service.net' # replace with smtp service
 SMTP_PORT = 587
-SMTP_USERNAME = 'apikey'  # replace with mail server username
-SMTP_PASSWORD = 'Actual_api_key'  # replace with mail server api key
+SMTP_USERNAME = 'apikey'  # replace with smtp service username
+SMTP_PASSWORD = 'Actual_api_key'  # replace with smtp service api key
 FROM_EMAIL = 'you@YourDomain.com'  # replace with verified sender from smtp service
 SUBJECT = 'ѕесuritу Аlert'
 
